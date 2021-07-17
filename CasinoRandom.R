@@ -8,7 +8,7 @@
 draw = TRUE  # Generates winning numbers if set true
 
 message("--------------------------------------------------------------\n")
-message(Sys.time())                                                     # Current datetime
+print(Sys.time())                                                       # Current datetime
 
 number.of.tickets = 10                                                  # Number of tickets
 house.share.to.pot = 5
