@@ -46,7 +46,7 @@ for (index in 1:length(winners)) {
                 ),
                 col = ""
         )
-        message(winner.text) 
+        message(winner.text)
         
 }
 
