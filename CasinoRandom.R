@@ -7,7 +7,7 @@
 
 draw = TRUE  # Generates winning numbers if set true
 
-
+message("--------------------------------------------------------------\n")
 message(Sys.time())                                                     # Current datetime
 
 number.of.tickets = 10                                                  # Number of tickets
@@ -21,7 +21,7 @@ winner.title = c(
         "**** Second winner **** :",
         "**** Third winner  **** :"
 )
-winners = sample(1:size.of.pot, size = 3, replace = FALSE)
+winners = sample(1:number.of.tickets, size = 3, replace = FALSE)
 
 
 
@@ -30,7 +30,7 @@ if (!draw) {
         message("\t--- No draw made --- ")
 }
 
-print("------------------------------------------------\n")
+message("--------------------------------------------------------------\n")
 for (index in 1:length(winners)) {
         winner.text = paste(
                 c(
